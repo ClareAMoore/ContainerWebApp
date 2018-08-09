@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  containerwebapp:
+    image: containerwebapp
+    build:
+      context: .
+      dockerfile: ContainerWebApp\Dockerfile
