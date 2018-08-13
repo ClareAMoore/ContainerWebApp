@@ -3,6 +3,6 @@ version: '3'
 services:
   containerwebapp:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Development      
     ports:
       - "80"

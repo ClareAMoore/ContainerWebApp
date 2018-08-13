@@ -6,4 +6,3 @@ services:
     build:
       context: .
       dockerfile: ContainerWebApp/Dockerfile      
-      environment: EmailServer=172.2.0.18
