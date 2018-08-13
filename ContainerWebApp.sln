@@ -5,9 +5,7 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerWebApp", "ContainerWebApp\ContainerWebApp.csproj", "{802C199A-70C2-49AE-B07B-BFDBF443FD73}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EAE4091D-1287-476A-A6EC-47733B0BBD41}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerWebApp.Test", "..\ContainerWebApp.Test\ContainerWebApp.Test.csproj", "{FF60D374-8BF1-47B6-947C-6E4860C2E85B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerWebApp.Test", "ContainerWebApp.Test\ContainerWebApp.Test.csproj", "{B87B0AFE-3148-4CC1-B800-347261E90674}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +17,10 @@ Global
 		{802C199A-70C2-49AE-B07B-BFDBF443FD73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{802C199A-70C2-49AE-B07B-BFDBF443FD73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{802C199A-70C2-49AE-B07B-BFDBF443FD73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EAE4091D-1287-476A-A6EC-47733B0BBD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EAE4091D-1287-476A-A6EC-47733B0BBD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EAE4091D-1287-476A-A6EC-47733B0BBD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EAE4091D-1287-476A-A6EC-47733B0BBD41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF60D374-8BF1-47B6-947C-6E4860C2E85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF60D374-8BF1-47B6-947C-6E4860C2E85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF60D374-8BF1-47B6-947C-6E4860C2E85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF60D374-8BF1-47B6-947C-6E4860C2E85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B87B0AFE-3148-4CC1-B800-347261E90674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87B0AFE-3148-4CC1-B800-347261E90674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87B0AFE-3148-4CC1-B800-347261E90674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B87B0AFE-3148-4CC1-B800-347261E90674}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
