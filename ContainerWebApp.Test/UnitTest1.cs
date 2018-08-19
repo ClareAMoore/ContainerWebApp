@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace ContainerWebApp.Test
@@ -8,7 +9,7 @@ namespace ContainerWebApp.Test
         [Fact]
         public void Test1()
         {
-
+            Assert.Empty(new List<string>());
         }
     }
 }
