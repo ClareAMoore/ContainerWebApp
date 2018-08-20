@@ -12,6 +12,11 @@ namespace ContainerWebApp.Pages
         public void OnGet()
         {
 
+        }        
+
+        public async Task<int> OnPostAddMessageAsync()
+        {
+            return 47;
         }
     }
 }
