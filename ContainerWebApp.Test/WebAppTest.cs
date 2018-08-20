@@ -23,38 +23,38 @@ namespace ContainerWebApp.Test
             Assert.Empty(new List<string>());
         }
 
-        [Fact]
+        //[Fact]
 
-        public async Task Test_Result_From_Index_Model()
-        {
-            // Arrange
-            var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase("InMemoryDb");
-            var mockAppDbContext = new Mock<AppDbContext>(optionsBuilder.Options);
-            var expectedMessages = AppDbContext.GetSeedingMessages();            
-            var httpContext = new DefaultHttpContext();
-            var modelState = new ModelStateDictionary();
-            var actionContext = new ActionContext(httpContext, new RouteData(), new PageActionDescriptor(), modelState);
-            var modelMetadataProvider = new EmptyModelMetadataProvider();
-            var viewData = new ViewDataDictionary(modelMetadataProvider, modelState);
-            var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
-            var pageContext = new PageContext(actionContext)
-            {
-                ViewData = viewData
-            };
-            var pageModel = new IndexModel()
-            {
-                PageContext = pageContext,
-                TempData = tempData,
-                Url = new UrlHelper(actionContext)
-            };
-            pageModel.ModelState.AddModelError("Message.Text", "The Text field is required.");
+        //public async Task Test_Result_From_Index_Model()
+        //{
+        //    // Arrange
+        //    var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>()
+        //        .UseInMemoryDatabase("InMemoryDb");
+        //    var mockAppDbContext = new Mock<AppDbContext>(optionsBuilder.Options);
+        //    var expectedMessages = AppDbContext.GetSeedingMessages();            
+        //    var httpContext = new DefaultHttpContext();
+        //    var modelState = new ModelStateDictionary();
+        //    var actionContext = new ActionContext(httpContext, new RouteData(), new PageActionDescriptor(), modelState);
+        //    var modelMetadataProvider = new EmptyModelMetadataProvider();
+        //    var viewData = new ViewDataDictionary(modelMetadataProvider, modelState);
+        //    var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        //    var pageContext = new PageContext(actionContext)
+        //    {
+        //        ViewData = viewData
+        //    };
+        //    var pageModel = new IndexModel()
+        //    {
+        //        PageContext = pageContext,
+        //        TempData = tempData,
+        //        Url = new UrlHelper(actionContext)
+        //    };
+        //    pageModel.ModelState.AddModelError("Message.Text", "The Text field is required.");
 
-            // Act
-            var result = await pageModel.OnPostAddMessageAsync();
+        //    // Act
+        //    var result = await pageModel.OnPostAddMessageAsync();
 
-            // Assert
-            Assert.IsType<int>(result);
-        }
+        //    // Assert
+        //    Assert.IsType<int>(result);
+        //}
     }
 }
